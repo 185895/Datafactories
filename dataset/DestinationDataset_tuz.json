@@ -1,0 +1,21 @@
+{
+	"name": "DestinationDataset_tuz",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ALDS_BanDataLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "themes.csv.gz",
+				"fileSystem": "container1"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
